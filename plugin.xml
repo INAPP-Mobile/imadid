@@ -3,7 +3,7 @@
     <name>IMAdId</name>
     <description>Get Mobile Ad Ids</description>
     <license>Apache 2.0</license>
-    <keywords>idfa, apple, ios</keywords>
+    <keywords></keywords>
     <js-module src="www/imad.js" name="device">
         <clobbers target="device" />
     </js-module>
