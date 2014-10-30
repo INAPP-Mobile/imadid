@@ -1,0 +1,12 @@
+{
+  "name": "imadid",
+  "version": "0.1.0",
+  "description": "A library for getting mobile ad id",
+  "license": "MIT",
+  "engines": [
+    {
+      "name": "cordova"
+      "version": ">=2.9.0"
+    }
+  ]
+}

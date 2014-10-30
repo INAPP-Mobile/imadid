@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="kr.imapp.hybrid.imadid" version="0.1.0">
+    <name>IMAdId</name>
+    <description>Get Mobile Ad Ids</description>
+    <license>Apache 2.0</license>
+    <keywords>idfa, apple, ios</keywords>
+    <js-module src="www/imad.js" name="device">
+        <clobbers target="device" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="CDVAdId">
+                <param name="ios-package" value="CDVAdId"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVAdId.h" />
+        <source-file src="src/ios/CDVAdId.m" />
+    </platform>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="IMAdId">
+                <param name="android-package" value="kr.imapp.hybrid.imadid.IMAdId"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/IMAdId.java" target-dir="src/kr/imapp/hybrid/imadid" />
+
+    </platform>
+
+</plugin>
